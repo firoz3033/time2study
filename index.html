@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
+    <title>Time2Study | Where you can start a new journey of learning and many more</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style></style>
+  </head>
+  <body>
+    <nav
+      class="bg-purple-700 py-3 navbar md:py-4 flex items-center fixed w-full z-20"
+    >
+      <div class="mobile_nav flex items-center justify-between w-full">
+        <div class="hamburg md:hidden">
+          <span class="text-3xl cursor-pointer mx-4 text-white">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          </span>
+        </div>
+
+        <div class="logo flex items-center h-8 pl-1 md:ml-7">
+          <img src="/logo.png" class="h-8 w-10 md:h-10 md:w-12" alt="" />
+          <h
+            class="text-white text-2xl font-[Poppins] font-extrabold md:text-3xl"
+            >2Study</h
+          >
+        </div>
+
+        <div
+          class="searchbox text-2xl text-white px-1 mr-4 flex items-center md:hidden"
+        >
+          <span class="text-xl">Search...</span
+          ><ion-icon name="search"></ion-icon>
+        </div>
+
+        <div
+          class="big_searchbox text-2xl text-white px-1 mr-4 hidden items-center absolute md:static md:flex"
+        >
+          <input
+            type="text"
+            class="border-white border-l-0 border-r-0 border-t-0 border-2 w-[255px] outline-none text-white text-xl font-mono px-3 border-2-0 bg-transparent"
+            placeholder="Search Here..."
+          />
+        </div>
+      </div>
+
+      <div class="nav_items">
+        <ul
+          class="itms space-y-2 pt-4 pl-4 w-full h-72 bg-purple-600 opacity-0 top-[50px] left-[-765px] absolute transition-all ease-in duration-300 md:opacity-100 md:h-full md:flex md:static md:bg-transparent md:space-x-5 md:items-center md:space-y-0 md:mr-7"
+        >
+          <li>
+            <a
+              href=""
+              class="link font-bold text-white cursor-pointer font-mono text-xl hover:text-purple-600 transition duration-700 ease-in-out"
+              >HOME</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="link font-bold text-white cursor-pointer font-mono text-xl hover:text-purple-900 transition duration-700 ease-in-out"
+              >CONTACT</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="link font-bold text-white cursor-pointer font-mono text-xl hover:text-purple-900 transition duration-700 ease-in-out"
+              >ABOUT</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="link font-bold text-white cursor-pointer font-mono text-xl hover:text-purple-900 transition duration-700 ease-in-out"
+              >HELP</a
+            >
+          </li>
+
+          <!-- ######## Buttons ##### -->
+          <li class="sm:hidden">
+            <a
+              href=""
+              class="link font-bold text-white cursor-pointer font-mono text-xl hover:text-purple-900 transition duration-700 ease-in-out"
+            >
+              <button
+                class="enroll px-2 py-1 rounded-xl bg-purple-700 text-white font-mono text-lg"
+              >
+                ENROLL Now
+              </button>
+            </a>
+          </li>
+          <li class="sm:hidden">
+            <a
+              href=""
+              class="link font-bold text-white cursor-pointer font-mono text-xl hover:text-purple-900 transition duration-700 ease-in-out"
+            >
+              <button
+                class="enroll px-2 py-1 rounded-xl bg-purple-700 text-white font-mono text-lg"
+              >
+                Book Demo Class
+              </button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 
+      ###################################################################################
+       content after the nav bar is here...
+      ############################################################################### -->
+
+    <div class="main bg-white">
+      <div class="top_part">
+        <div class="img">
+          <img src="/boywithbook2.jpg" alt="" />
+        </div>
+        <div
+          class="top_text absolute top-14 left-20 nm:top-16 xm:top-24 xm:left-36 sm:top-28 sm:left-40 md:left-52 md:top-40 lg:top-60 lg:left-96 xl:top-96 xl:left-[500px]"
+        >
+          <h1
+            class="text-white font-bold font-mono text-lg xm:text-xl sm:font-semibold md:text-2xl"
+          >
+            Your Future Is In Your Choice
+          </h1>
+          <p
+            class="text-xs font-mono text-white mr-2 xm:text-base md:text-lg md:pr-10 md:py-2"
+          >
+            There are many options for success in life. Whether we will be
+            successful in life or not depends on what options we took because
+            not all the options of one question are correct.
+          </p>
+          <div
+            class="butt_ms hidden absolute top-36 left-6 space-x-3 nm:flex xm:top-52 xm:left-2 xm:space-x-3 sm:space-x-7 md:top-56 md:space-x-10"
+          >
+            <div class="">
+              <button
+                class="enroll hover:from-yellow-600 hover:to-red-600 hover:border-2 hover:border-white cursor-pointer px-2 py-1 rounded-xl shadow-md  bg-gradient-to-r from-yellow-500 to-red-500 text-white font-mono text-sm font-bold xm:text-lg sm:text-xl md:text-2xl md:px-5 md:py-3"
+              >
+                ENROLL Now
+              </button>
+            </div>
+            <div>
+              <button
+                class="enroll hover:from-yellow-600 hover:to-red-600 hover:border-2 hover:border-white cursor-pointer px-2 py-1 rounded-xl shadow-md  bg-gradient-to-r from-yellow-500 to-red-500 text-white font-mono text-sm font-bold xm:text-lg sm:text-xl md:text-2xl md:px-5 md:py-3"
+              >
+                Book Demo Class
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 
+      ###################################################################################
+       
+      ############################################################################### -->
+      <div class="card-section1 flex justify-center">
+      <div class="Long_card w-full py-10 md:flex md:flex-col md:justify-center md:items-center max-w-5xl md:px-8   ">
+        <h1 class="self-center text-center text-3xl text-[#454545] font-bold font-mono px-3 lg:4xl md:font-extrabold ">Why Time2Study Classes ?</h1>
+        <div class="cards space-y-8 mt-6 md:flex md:items-center md:space-y-0 md:h-[18rem] md:pt-5 md:box-border md:space-x-2">
+        <div class="card_small h-[100%]   flex flex-col  items-center space-x-1">
+          <img src="/one_one.jpg" class="h-20 w-20 border-8 border-[#DDD]" alt="">
+          <p class="text-center text-xl text-[#454545] font-bold font-mono px-3">One-One Interaction</p>
+        </div>
+        <div class="card_small h-[100%]  flex flex-col items-center space-x-1">
+          <img src="/online.png" class="h-20 w-20 border-8 border-[#DDD]" alt="">
+          <p class="text-center text-xl text-[#454545] font-bold font-mono px-3">MON-STURDAY</p>
+          <p class="text-center text-lg text-[#454545] font-bold font-mono px-3">Daily 3 Hours Live Classes</p>
+        </div>
+        <div class="card_small h-[100%]  flex flex-col items-center space-x-1">
+          <img src="/record.png" class="h-20 w-20 border-8 border-[#DDD]" alt="">
+          <p class="text-center text-xl text-[#454545] font-bold font-mono px-3">Recorded Videos</p>
+          <p class="text-center text-lg text-[#454545] font-bold font-mono px-3">You can Watch If you Miss the Class</p>
+        </div>
+        <div class="card_small h-[100%]  flex flex-col items-center space-x-1">
+          <img src="/study.jpg" class="h-20 w-20 border-8 border-[#DDD]" alt="">
+          <p class="text-center text-xl text-[#454545] font-bold font-mono px-3">Study-Materials+Notes</p>
+          <p class="text-center text-lg text-[#454545] font-bold font-mono px-3">To Save your Time in Writing Notes</p>
+        </div>
+        <div class="card_small h-[100%]   flex flex-col  items-center space-x-1">
+          <img src="/dout.png" class="h-20 w-20 border-8 border-[#DDD]" alt="">
+          <p class="text-center text-xl text-[#454545] font-bold font-mono px-3">Dout-Classes</p>
+          <p class="text-center text-lg text-[#454545] font-bold font-mono px-3">Every Sunday Any Time</p>
+        </div>
+      </div>
+      </div>
+    </div>
+<!-- 
+      ###################################################################################
+       
+      ############################################################################### -->
+      <div class="card-section2 flex flex-col items-center px-10 ">
+      <div class="card_items bg-[#efb515] py-2 md:flex md:flex-row-reverse w-[80%] max-w-5xl md:w-full md:py-0">
+        <div class="image flex justify-center md:py-8 md:pr-8 ">
+          <img src="/1-5.jpg" class="h-56 w-80 xm:h-80 xm:w-[400px] object-cover" alt="">
+        </div>
+        <div class="text-related-img flex flex-col  items-center">
+          <h1 class="text-2xl font-bold font-mono  px-8 py-2 rounded-md shadow-lg bg-gradient-to-r from-purple-700 via-blue-600 to-purple-700 text-white md:absolute md: ">CLASS 1-5</h1>
+          <ol class="text-xl text-[#2d2b2b] font-bold font-mono px-5 pt-6 pb-10 md:pt-14 md:pb-24 space-y-1 md:mt-5  ">
+            <li>This is specialy designed for class 1-5</li>
+            <li>Single teacher will teach singel students</li>
+            <li>Daily live Classes for min. 2 hours</li>
+            <li>Dout solving immediately</li>
+            <li>Only Monday to friday classes</li>
+          </ol>
+
+        </div>
+      </div>
+      <div class="button_sect2 flex justify-center relative bottom-11 md:bottom-[78px] md:left-[-154px] ">
+        <button class="bg-gradient-to-r from-yellow-500 to-red-500 px-2 py-1 text-lg nm:px-4 nm:py-2 nm:text-xl text-white font-mono font-bold rounded-md shadow-md    hover:from-yellow-600 hover:to-red-600 border-2 border-opacity-0 hover:border-white hover:border-opacity-100 ">Book A Free Class</button>
+      </div>
+    </div>
+
+    
+
+
+    <div class="card-section3 flex flex-col items-center px-10 ">
+      <div class="card_items bg-[#cb5201] py-2 md:flex w-[80%] max-w-5xl md:w-full md:py-0">
+        <div class="image flex justify-center md:py-8 md:pl-8 md:pr-5 ">
+          <img src="/6-8.jpg" class="h-64 w-80 xm:h-80 xm:w-[300px] object-cover" alt="">
+        </div>
+        <div class="text-related-img flex flex-col   items-center">
+          <h1 class="text-2xl font-bold font-mono  px-8 py-2 rounded-md shadow-lg bg-gradient-to-r from-purple-700 via-blue-600 to-purple-700 text-white md:absolute md: ">CLASS 6-8</h1>
+          <ol class="text-xl text-[#2d2b2b] font-bold font-mono px-5 pt-6 pb-10 md:pt-14 md:pb-24 space-y-1 md:mt-5 pt-14 ">
+            <li>This is specialy designed for class 6-8</li>
+            <li>Single teacher will teach singel students</li>
+            <li>Daily live Classes for min. 2 hours</li>
+            <li>Dout solving immediately</li>
+            <li>Only Monday to friday classes</li>
+          </ol>
+
+        </div>
+      </div>
+      <div class="button_sect2 flex justify-center relative bottom-11  md:bottom-[78px] md:left-[154px] ">
+        <button class="bg-gradient-to-r from-yellow-500 to-red-500 px-2 py-1 text-lg nm:px-4 nm:py-2 nm:text-xl text-white font-mono font-bold rounded-md shadow-md    hover:from-yellow-600 hover:to-red-600 border-2 border-opacity-0 hover:border-white hover:border-opacity-100 ">Book A Free Class</button>
+      </div>
+    </div>
+
+
+
+
+    <div class="card-section4 flex flex-col items-center px-10 mb-8 box-border ">
+      <div class="card_items bg-[#e7f3ff] py-2 md:flex md:flex-row-reverse w-[80%] md:w-full max-w-5xl  md:py-0">
+        <div class="image flex justify-center md:py-8 md:pr-8 ">
+          <img src="/9-10.jpg" class="h-64 w-80 xm:h-80 xm:w-96 object-cover" alt="">
+        </div>
+        <div class="text-related-img flex flex-col  items-center">
+          <h1 class="text-2xl font-bold font-mono  px-8 py-2 rounded-md shadow-lg bg-gradient-to-r from-purple-700 via-blue-600 to-purple-700 text-white md:absolute md: ">CLASS 9-10</h1>
+          <ol class="text-xl text-[#2d2b2b] font-bold font-mono px-5 pt-6 pb-10 md:pt-14 md:pb-24 space-y-1 md:mt-5 pt-14 ">
+            <li>This is specialy designed for class 9-10</li>
+            <li>Single teacher will teach singel students</li>
+            <li>Daily live Classes for min. 2 hours</li>
+            <li>Dout solving immediately</li>
+            <li>Only Monday to friday classes</li>
+          </ol>
+
+        </div>
+      </div>
+      <div class="button_sect2 flex justify-center relative bottom-11 md:bottom-[78px] md:left-[-154px] ">
+        <button class="bg-gradient-to-r transition-all from-yellow-500 to-red-500 px-2 py-1 text-lg nm:px-4 nm:py-2 nm:text-xl  text-white font-mono font-bold rounded-md shadow-md    hover:from-yellow-600 hover:to-red-600 border-2 border-opacity-0 hover:border-white hover:border-opacity-100"><a href="#demo_form"> Book A Free Class</a></button>
+      </div>
+    </div>
+
+<!-- 
+      ###################################################################################
+       
+      ############################################################################### -->
+
+      <div class="card_section4 h-64 md:h-60 bg-gradient-to-r from-purple-700 via-blue-600 xm:flex xm:flex-col xm:items-center to-purple-700 mt-6">
+        <div class="headings px-12 text-white font-bold  font-mono flex items-center justify-center h-full xm:items-start xm:pt-6 md:pt-14">
+          <h1 class="text-4xl xm:text-3xl lg:text-5xl ">Thanks for Your Love and Supports</h1>
+        </div>
+        <div class="reviews hidden  xm:grid grid-cols-2 my-7 md:grid-cols-4 md:mx-5 lg:mx-8">
+          <div class="grid_itm mx-10 md:mx-8 sm:mx-16 lg:mx-12">
+            <h1 class="text-2xl  text-white font-mono font-bold text-center md:text-4xl">0M+</h1>
+            <p class=" text-xl font-mono text-white lg:text-2xl">Joined Us</p>
+          </div>
+          <div class="grid_itm mx-10 md:mx-8 sm:mx-16 lg:mx-12">
+            <h1 class="text-2xl  text-white font-mono font-bold text-center md:text-4xl">0L+</h1>
+            <p class=" text-xl font-mono text-white lg:text-2xl">Videos Letures</p>
+          </div>
+          <div class="grid_itm mx-10 md:mx-8 sm:mx-16 lg:mx-12">
+            <h1 class="text-2xl  text-white font-mono font-bold text-center md:text-4xl">0M+</h1>
+            <p class=" text-xl font-mono text-white lg:text-2xl">questions</p>
+          </div>
+          <div class="grid_itm mx-10 md:mx-8 sm:mx-16 lg:mx-12">
+            <h1 class="text-2xl  text-white font-mono font-bold text-center md:text-4xl">0K+</h1>
+            <p class=" text-xl font-mono text-white lg:text-2xl">Sample Paper</p>
+          </div>
+          
+        </div>
+
+      </div>
+
+
+<!-- 
+      ###################################################################################
+       
+      ############################################################################### -->
+
+    <div class="section_card_teacher flex flex-col items-center justify-center my-10  ">
+      
+      <div class="container_teacher max-w-5xl md:flex md:flex-col justify-center items-center bg-teal-100  ">
+      <div class="top_of_card marker pt-4  ">
+        <h1 class="text-4xl font-mono font-bold relative text-center text-purple-700">Our Star Teachers</h1>
+      </div>
+      <div class="card_container max-w-5xl md:flex  bg-teal-100 py-8 px-10 space-y-8 md:space-y-0 md:space-x-8">
+
+      <div class="card_1 bg-green-500 relative   rounded-md  before:absolute before:py-0 before:px-0 before:h-24 before:w-full  before:bg-purple-700 before:rounded-t-md">
+        <div class="card_items flex flex-col items-center px-12 py-12 space-x-3 z-10 relative ">
+          <div class="img_fcard h-28 w-28  rounded-full p-[2px] bg-purple-700">
+            <img src="/firoz.jpg" class="h-full w-full object-cover border-2 rounded-full " alt="">
+          </div>
+          <div class="card_name font-mono text-white font-bold text-2xl text-center">Arvind Kumar</div>
+          <div class="position font-mono text-white font-bold text-xl text-center">English </div>
+          <!-- <div class="subject font-mono text-white text-center ">mathematics</div> -->
+        </div>
+      </div>
+
+      <div class="card_1 bg-green-500 relative   rounded-md  before:absolute before:py-0 before:px-0 before:h-24 before:w-full  before:bg-purple-700 before:rounded-t-md">
+        <div class="card_items flex flex-col items-center px-12 py-12 space-x-3 z-10 relative ">
+          <div class="img_fcard h-28 w-28  rounded-full p-[2px] bg-purple-700">
+            <img src="/firoz.jpg" class="h-full w-full object-cover border-2 rounded-full " alt="">
+          </div>
+          <div class="card_name font-mono text-white font-bold text-2xl text-center">firoz Ansari</div>
+          <div class="position font-mono text-white font-bold text-xl text-center">mathematics</div>
+          <!-- <div class="subject font-mono text-white text-center ">mathematics</div> -->
+        </div>
+      </div>
+
+      <div class="card_1 bg-green-500 relative   rounded-md  before:absolute before:py-0 before:px-0 before:h-24 before:w-full  before:bg-purple-700 before:rounded-t-md">
+        <div class="card_items flex flex-col items-center px-12 py-12 space-x-3 z-10 relative ">
+          <div class="img_fcard h-28 w-28  rounded-full p-[2px] bg-purple-700">
+            <img src="/firoz.jpg" class="h-full w-full object-cover border-2 rounded-full " alt="">
+          </div>
+          <div class="card_name font-mono text-white font-bold text-2xl text-center">Saurabh Singh</div>
+          <div class="position font-mono text-white font-bold text-xl text-center">Biology </div>
+          <!-- <div class="subject font-mono text-white text-center ">mathematics</div> -->
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+    </div>
+
+
+      
+<!-- 
+      ###################################################################################
+       
+      ############################################################################### -->
+
+      <div class="demo_form py-10 md:flex md:items-center md:justify-center md:space-x-5">
+        <div class="left hidden md:flex">
+          <div class="left_img h-[30rem] w-full flex items-center justify-center">
+            <div class="IMg h-[30rem] w-[30rem] ">
+            <img src="/form.jpg" class=" w-full h-full object-cover" alt="">
+          </div>
+          </div>
+        </div>
+        <div class="right flex items-center justify-center ">
+          <div class="form py-5 bg-[#c5ccc5] px-10 rounded-lg">
+            <form action="" class="flex flex-col space-y-3">
+              <label for="" class="text-center text-xl font-mono font-bold">Book Your Free Demo Class</label>
+              <label for="" class="text-center font-mono text-lg font-bold ">Enter your details </label>
+              <input type="text" id="name" placeholder="Enter Your Name" class=" outline-none  px-5 font-mono text-base py-3 bg-transparent border-2 border-[#938f8f] rounded-md">
+              <input type="text" id="name" placeholder="Enter Your Email" class=" outline-none  px-5 font-mono text-base py-3 bg-transparent border-2 border-[#938f8f] rounded-md">
+              <input type="text" id="name" placeholder="Enter Your Number" class=" outline-none  px-5 font-mono text-base py-3 bg-transparent border-2 border-[#938f8f] rounded-md">
+              <input type="text" id="name" placeholder="Enter Your Class" class=" outline-none  px-5 font-mono text-base py-3 bg-transparent border-2 border-[#938f8f] rounded-md">
+              <input type="text" id="name" placeholder="Enter Your Address" class=" outline-none  px-5 font-mono text-base py-3 bg-transparent border-2 border-[#938f8f] rounded-md">
+              <button type="submit" class="bg-gradient-to-tr from-yellow-500 to-red-500 px-4 py-2 text-lg font-mono font-bold text-white rounded-lg hover:from-yellow-600 hover:to-red-600">Book My Class</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+<!-- 
+      ###################################################################################
+       
+      ############################################################################### -->
+
+    <div class="footer flex justify-center items-center  flex-col bg-[#00234f]">
+      <div class="top max-w-5xl px-10 py-5 ">
+        <div class="foter_txt ">
+          <div class=" table sk:table-row text-white">
+            <div class=" py-3  sk:table-cell sk:py-0 sk:px-8">
+              <span class=" px-4 py-2 text-2xl font-mono font-bold text-center text-purple-700">Class 1-5</span>
+              <ol class="px-2 py-1 font-mono text-lg ">
+                <li class="cursor-pointer hover:text-purple-700 transition-all duration-300 ">NCERT Notes</li>
+                <li class="cursor-pointer hover:text-purple-700 transition-all duration-300 ">DPP</li>
+                <li class="cursor-pointer hover:text-purple-700 transition-all duration-300 ">Quize</li>
+                <li class="cursor-pointer hover:text-purple-700 transition-all duration-300 ">Formulas</li>
+                <li class="cursor-pointer hover:text-purple-700 transition-all duration-300 ">Classes Notes</li>
+                <li class="cursor-pointer hover:text-purple-700 transition-all duration-300 ">Dout Class</li>
+                <li class="cursor-pointer hover:text-purple-700 transition-all duration-300 ">HOTS question</li>
+                <li class="cursor-pointer hover:text-purple-700 transition-all duration-300 ">Previous Year question</li>
+              </ol>
+            </div>
+            <div class=" py-3 sk:table-cell sk:py-0 sk:px-8">
+              <span class=" px-4 py-2 text-2xl font-mono font-bold text-center text-purple-700">Class 6-8</span>
+              <ol class="px-2 py-1 font-mono text-lg ">
+                <li class="cursor-pointer hover:text-purple-700 transition-all duration-300 ">NCERT Notes</li>
+                <li class="cursor-pointer hover:text-purple-700 transition-all duration-300 ">DPP</li>
+                <li class="cursor-pointer hover:text-purple-700 transition-all duration-300 ">Quize</li>
+                <li class="cursor-pointer hover:text-purple-700 transition-all duration-300 ">Formulas</li>
+                <li class="cursor-pointer hover:text-purple-700 transition-all duration-300 ">Classes Notes</li>
+                <li class="cursor-pointer hover:text-purple-700 transition-all duration-300 ">Dout Class</li>
+                <li class="cursor-pointer hover:text-purple-700 transition-all duration-300 ">HOTS question</li>
+                <li class="cursor-pointer hover:text-purple-700 transition-all duration-300 ">Previous Year question</li>
+              </ol>
+            </div>
+            <div class=" py-3 sk:table-cell sk:py-0 sk:px-8">
+              <span class=" px-4 py-2 text-2xl font-mono font-bold text-center text-purple-700">Class 9-10</span>
+              <ol class="px-2 py-1 font-mono text-lg ">
+                <li class="cursor-pointer hover:text-purple-700 transition-all duration-300 ">NCERT Notes</li>
+                <li class="cursor-pointer hover:text-purple-700 transition-all duration-300 ">DPP</li>
+                <li class="cursor-pointer hover:text-purple-700 transition-all duration-300 ">Quize</li>
+                <li class="cursor-pointer hover:text-purple-700 transition-all duration-300 ">Formulas</li>
+                <li class="cursor-pointer hover:text-purple-700 transition-all duration-300 ">Classes Notes</li>
+                <li class="cursor-pointer hover:text-purple-700 transition-all duration-300 ">Dout Class</li>
+                <li class="cursor-pointer hover:text-purple-700 transition-all duration-300 ">HOTS question</li>
+                <li class="cursor-pointer hover:text-purple-700 transition-all duration-300 ">Previous Year question</li>
+              </ol>
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+      <hr class="w-full h-[1px] bg-white">
+      <div class="bottom_container bg-[#041326] w-full">
+      
+        <div class="botom_itmx">
+          <div class="btm_txt flex flex-col justify-center items-center mx-6 text-white md:flex-row ">
+            <ol class="grid grid-cols-2 font-mono text-xl space-y-3 py-5 md:flex md:space-y-0 md:space-x-4  ">
+              <li class="text-center cursor-pointer hover:text-purple-700 transition-all duration-300 mt-3 md:mt-0 ">Terms and Conditions</li>
+              <li class="text-center cursor-pointer hover:text-purple-700 transition-all duration-300 ">About Us</li>
+              <li class="text-center cursor-pointer hover:text-purple-700 transition-all duration-300 ">Contact Us</li>
+              <li class="text-center cursor-pointer hover:text-purple-700 transition-all duration-300 ">Privacy Policy</li>
+            </ol>
+            <span class="font-mono font-bold inline-block py-3 pl-8">Copyright &#169;  2022 Time2Study Pvt. Ltd. All rights reserved. </span>
+          </div>
+        </div>
+      
+    </div>
+    </div>
+
+    </div>
+
+
+    <script src="/main.js"></script>
+  </body>
+</html>
